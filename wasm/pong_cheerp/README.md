@@ -8,7 +8,7 @@ Compile it by executing compile.sh (this has been created for and tested on macO
 
 ## Step 2
 
-Start a web server from the sample directory (where index.html is):
+Start a web server from the sample directory (where index.html is), e.g. with the provided Python script:
 
 ```
 python server.py

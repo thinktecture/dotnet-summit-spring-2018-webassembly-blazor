@@ -44,19 +44,11 @@ copy debug\* .
 
 ## Step 3
 
-Start a web server from the sample directory (where sample.html is):
-
-```
-python -m SimpleHTTPServer
-```
-
-Unfortunately, the above http server does not give wasm binaries the right mime type, which disables WebAssembly stream compilation.
-The included server.py script solves this and can be used instead:
-
+Start a web server from the sample directory (where index.html is), e.g. with the provided Python script:
 ```
 python server.py
 ```
 
 ## Step 4
 
-From within a browser, go to `localhost:8000/sample.html` to see the sample app, which will show a text box (allowing C# code to be entered) and **Run** button when successfully built.
+From within a browser, go to `localhost:8000/index.html` to see the sample app, which will show a text box (allowing C# code to be entered) and **Run** button when successfully built.
