@@ -6,4 +6,4 @@ Samples for the WebAssembly &amp; ASP.NET Blazor night session at .NET Summit 20
 
 ### `wasm` folder
 
-Contains basic WASM samples for Emscripten (with C), Cheerp (with C++), and momo.wasm (with C#).
+Contains basic WASM samples for Emscripten (with C), Cheerp (with C++), and mono.wasm (with C#).
