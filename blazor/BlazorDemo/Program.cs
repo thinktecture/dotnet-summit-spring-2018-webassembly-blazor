@@ -6,17 +6,17 @@ using BlazorDemo.Services;
 
 namespace BlazorDemo
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var serviceProvider = new BrowserServiceProvider(services =>
-            {
-                // Add any custom services here
-	            services.AddScoped<ConferenceService>();
-            });
+	public class Program
+	{
+		static void Main(string[] args)
+		{
+			var serviceProvider = new BrowserServiceProvider(services =>
+			{
+				// Add any custom services here
+				services.AddScoped<ConferenceService>();
+			});
 
-            new BrowserRenderer(serviceProvider).AddComponent<App>("app");
-        }
-    }
+			new BrowserRenderer(serviceProvider).AddComponent<App>("app");
+		}
+	}
 }

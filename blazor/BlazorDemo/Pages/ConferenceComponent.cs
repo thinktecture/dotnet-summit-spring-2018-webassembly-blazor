@@ -8,9 +8,9 @@ namespace BlazorDemo.Pages
 	public class ConferenceComponent : BlazorComponent
 	{
 		[Inject]
-		protected ConferenceService _conferenceService { get; set; }
+		private ConferenceService _conferenceService { get; set; }
 
-		protected IEnumerable<ConferenceModel> Conferences { get; set; }
+		protected IEnumerable<ConferenceModel> Conferences { get; private set; }
 
 		protected override async Task OnInitAsync()
 		{
